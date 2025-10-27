@@ -1,0 +1,153 @@
+/* :root {
+    --main-bg-color: #cadb17;
+    --light-blue: #17d10d;
+    --dark-blue: #11b84b;
+}
+
+body {
+    font-family: system-ui;
+    background: var(--main-bg-color);
+    height: 98vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+}
+
+section.download {
+    background: #fff;
+    width: 430px;
+    max-width: 90%;
+    border-radius: 25px;
+    box-shadow: 0px 20px 20px 0px #00000017;
+    padding: 2rem;
+    text-align: center;
+}
+
+.download__icon {
+    height: 8rem;
+}
+
+.download__meta h4 {
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.send-btn-container a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px 40px;
+    margin-top: 15px;
+    background: var(--light-blue);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.send-btn-container a:hover {
+    background: var(--dark-blue);
+} */
+
+
+:root {
+  --main-bg-color: #f9f9ff;
+  --primary-color: #764ba2;
+  --primary-dark: #5b3990;
+  --text-color: #333;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  background: var(--main-bg-color);
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 140px;
+}
+
+/* Download Section */
+section.download {
+  background: var(--card-bg);
+  width: 430px;
+  max-width: 90%;
+  border-radius: 25px;
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+section.download:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.download__icon {
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+/* Meta Text */
+.download__meta h4 {
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.download__meta p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Download Button */
+.send-btn-container a {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 10px 40px;
+  margin-top: 20px;
+  background: var(--primary-color);
+  text-decoration: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn-container a:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  section.download {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .download__icon {
+    height: 6rem;
+  }
+}
