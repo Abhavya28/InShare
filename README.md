@@ -1,4 +1,4 @@
-# 🚀 InShare
+# 🚀 InShare - File Sharing App
 
 A simple and elegant **file-sharing app** that allows users to upload and share files easily.  
 Built using **React**, **Node.js**, **Express**, and **Multer**.
