@@ -12,3 +12,15 @@ Built using **React**, **Node.js**, **Express**, and **Multer**.
 ## 🛠️ Tech Stack
 - **Frontend:** React
 - **Backend:** Node.js, Express, Multer
+
+## Home Page
+
+![Upload Page](screenshots/home.png)
+
+## Upload Page
+
+![Home Page](screenshots/upload.png)
+
+## Download Page
+
+![Download Page](screenshots/download.png)
