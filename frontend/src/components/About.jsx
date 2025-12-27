@@ -25,7 +25,7 @@ export default function About() {
         </p>
 
         <div className="about-highlight">
-          <h3>✨ Our Features</h3>
+          <h3>Our Features</h3>
           <ul>
             <li>🔒 100% Secure Uploads</li>
             <li>⚡ Lightning-Fast File Sharing</li>

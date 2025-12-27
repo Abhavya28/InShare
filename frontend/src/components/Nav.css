@@ -2,7 +2,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 12px 0;
@@ -18,21 +19,20 @@
   align-items: center;
 }
 
-/* Logo */
 .nav-logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #764ba2;
+  color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-logo:hover {
-  color: #5b3990;
+  color: #ccc;
+  transform: scale(1.05);
 }
 
-/* Nav Menu */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -45,68 +45,69 @@
   position: relative;
 }
 
-/* Normal Links */
 .nav-links {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.5px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-links:hover {
-  color: #764ba2;
+  color: #ccc;
+  transform: scale(1.05);
 }
 
-/* Login Button */
 .nav-btn {
-  background: #764ba2;
-  color: white;
+  background: #333;
+  color: #fff;
   padding: 8px 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, transform 0.2s ease;
 }
 
 .nav-btn:hover {
-  background: #5b3990;
+  background: #555;
+  transform: scale(1.05);
 }
 
-/* Hamburger Icon */
 .nav-icon {
   display: none;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.8rem;
+  color: #fff;
   cursor: pointer;
 }
 
-/* Responsive Menu */
+/* Responsive */
 @media screen and (max-width: 768px) {
+  .nav-icon {
+    display: block;
+  }
+
   .nav-menu {
     position: absolute;
-    top: 70px;
+    top: 65px;
     right: 0;
-    background: white;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
     flex-direction: column;
     width: 200px;
     text-align: center;
     border-radius: 10px;
     padding: 15px 0;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-30px);
     opacity: 0;
     pointer-events: none;
+    transition: all 0.3s ease;
   }
 
   .nav-menu.active {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
-  }
-
-  .nav-icon {
-    display: block;
   }
 
   .nav-item {

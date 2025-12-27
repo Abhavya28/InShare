@@ -2,11 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-// ✅ Add CORS
 const cors = require('cors');
 app.use(cors({
-  origin: 'http://localhost:3000' // your React frontend URL
-  // OR use '*' to allow all origins (not recommended for production)
+  origin: ['http://localhost:3000', 'http://localhost:3001']
 }));
 
 const PORT = process.env.PORT || 3000;

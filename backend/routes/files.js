@@ -24,7 +24,7 @@ let upload = multer({
 
 router.post("/", (req, res) => {
   upload(req, res, async (err) => {
-    // Check if file is provided and handle errors
+   
     if(!req.file){
         return res.json({ error: "All fields are required." });
     }
@@ -32,7 +32,7 @@ router.post("/", (req, res) => {
       return res.status(500).send({ error: err.message });
     }
 
-    // Create a new file record in the database
+    
     const file = new File({
       filename: req.file.filename,
       uuid: uuidv4(),

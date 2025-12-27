@@ -34,10 +34,17 @@ export default function Home() {
   };
 
   return (
-    <div className="upload-page">
+    <div
+      className="upload-page"
+      style={{
+        background: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('/images/bg.jpg') no-repeat center center`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <div className="upload-card">
         <h1>InShare</h1>
-        <p className="subtitle">Upload and share files easily 🚀</p>
+        <p className="subtitle">Upload and share files easily </p>
 
         <form onSubmit={handleUpload} className="upload-form">
           <label htmlFor="file-upload" className="file-label">
