@@ -21,11 +21,6 @@ export default function Nav() {
               About
             </Link>
           </li>
-          {/* <li className="nav-item">
-            <Link to="/login" className="nav-btn" onClick={() => setMenuOpen(false)}>
-              Login
-            </Link>
-          </li> */}
         </ul>
 
         <div className="nav-icon" onClick={() => setMenuOpen(!menuOpen)}>
