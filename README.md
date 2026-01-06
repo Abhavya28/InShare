@@ -24,3 +24,9 @@ Built using **React**, **Node.js**, **Express**, and **Multer**.
 ## Download Page
 
 ![Download Page](screenshots/download.png)
+
+## 👩‍💻 Author
+**Abhavya Gupta**  
+Full-Stack Developer  
+
+🔗 [GitHub Profile](https://github.com/Abhavya28)  
