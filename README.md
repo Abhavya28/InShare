@@ -10,7 +10,7 @@ Built using **React**, **Node.js**, **Express**, and **Multer**.
 - Responsive design
 
 ## 🛠️ Tech Stack
-- **Frontend:** React
+- **Frontend:** React.js
 - **Backend:** Node.js, Express, Multer
 
 ## Home Page
